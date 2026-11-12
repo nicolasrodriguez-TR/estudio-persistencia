@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Persistencia Android · Estudio</title>
+  <meta name="description" content="30 ejercicios de antipatrones y code smells de persistencia en Android para estudiar el parcial.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="barra__marca">
+      <span class="marca__logo" aria-hidden="true">◆</span>
+      <div>
+        <h1 class="marca__titulo">Persistencia Android</h1>
+        <p class="marca__sub">Antipatrones y code smells · Room · Flow · Compose</p>
+      </div>
+    </div>
+
+    <div class="barra__acciones">
+      <div class="progreso" aria-live="polite">
+        <div class="progreso__texto"><span id="progresoTexto">0 / 30</span></div>
+        <div class="progreso__pista"><div class="progreso__relleno" id="progresoRelleno"></div></div>
+      </div>
+      <button class="boton boton--icono" id="botonTema" type="button" aria-label="Cambiar tema">◐</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <main class="contenido" id="contenido" tabindex="-1"></main>
+  </div>
+
+  <footer class="pie-pagina">
+    <button type="button" class="enlace" id="botonReiniciar">Reiniciar progreso</button>
+  </footer>
+
+  <script src="ejercicios.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
